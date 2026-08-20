@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Akshat Jasrotia — Achievements and success markers." />
+    <title>Akshat Jasrotia — Achievements</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="icon" href="../icons/favicon.svg" />
+    <script>
+      (function () {
+        try {
+          var t = new URLSearchParams(location.search).get("theme");
+          if (t !== "light" && t !== "dark") t = localStorage.getItem("theme") || "dark";
+          else localStorage.setItem("theme", t);
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="void-page">
+    <div class="hero-bg">
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="noise"></div>
+
+    <section class="container section" id="achievements">
+      <div class="section-label">Success markers</div>
+      <h2 class="section-title">Achievements</h2>
+      <div class="ach-grid">
+        <div class="ach-card">
+          <div class="ach-icon">🇮🇳</div>
+          <div class="ach-info">
+            <p>
+              Participation in <strong>Viksit Bharat</strong> Campaign
+            </p>
+            <a href="https://drive.google.com/file/d/12Q6Gi0KMnbHnofZ_zKzc05yL8dHERDuB/view?usp=sharing" target="_blank" class="cert-link">Certificate ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      window.VOID_CONFIG = { mode: "section" };
+    </script>
+    <script src="../../script.js"></script>
+  </body>
+</html>

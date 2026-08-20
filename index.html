@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="Akshat Jasrotia, Press anywhere to open the circle selection." />
+    <title>Akshat Jasrotia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="static/icons/favicon.svg" />
+    <script>
+      (function () {
+        try {
+          var t = new URLSearchParams(location.search).get("theme");
+          if (t !== "light" && t !== "dark") t = localStorage.getItem("theme") || "dark";
+          else localStorage.setItem("theme", t);
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="void-home">
+    <div class="hero-bg">
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="noise"></div>
+
+    <div class="v-brand"><span class="dot"></span>AKSHAT&nbsp;JASROTIA</div>
+
+    <h1 class="v-title gradient-text" data-intro>Akshat Jasrotia</h1>
+
+    <div class="v-hint" id="v-hint" data-intro>
+      right click anywhere to begin<br />
+      <span style="letter-spacing:0.22em;font-size:0.8em;opacity:0.65">hold on touch</span><span class="caret"></span>
+    </div>
+
+    <script>
+      window.VOID_CONFIG = { mode: "home" };
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

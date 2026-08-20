@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Akshat Jasrotia — Learning path and roadmap." />
+    <title>Akshat Jasrotia — Roadmap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="icon" href="../icons/favicon.svg" />
+    <script>
+      (function () {
+        try {
+          var t = new URLSearchParams(location.search).get("theme");
+          if (t !== "light" && t !== "dark") t = localStorage.getItem("theme") || "dark";
+          else localStorage.setItem("theme", t);
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="void-page">
+    <div class="hero-bg">
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="noise"></div>
+
+    <section id="roadmap" class="section">
+      <div class="container">
+        <div class="section-label">What I learnt</div>
+        <h2 class="section-title">Learning Path</h2>
+      </div>
+      <div class="roadmap-fullwidth">
+        <div class="roadmap-img-wrap">
+          <a
+            href="https://www.youtube.com/@akshatjasrotia85/playlists"
+            target="_blank"
+          >
+            <img src="../images/roadmap.png" alt="Roadmap" id="roadmap-img" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      window.VOID_CONFIG = { mode: "section" };
+    </script>
+    <script src="../../script.js"></script>
+  </body>
+</html>
